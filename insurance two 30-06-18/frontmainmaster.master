@@ -1,0 +1,348 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="frontmainmaster.master.cs" Inherits="frontmainmaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head runat="server">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link rel="shortcut icon" href="images/favicon-96x96.png"/>
+    <title>All Family Bima Point</title>
+    <link rel="stylesheet" href="css/icon/et-line-font.css"/>
+    <!-- reset CSS -->
+    <link href="css/reset.css" rel="stylesheet"/>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- icon CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet"/>
+    <link href="css/Stroke-Gap-Icons.css" rel="stylesheet"/>
+    <!-- Themify icons -->
+    <link href="css/themify-icons/themify-icons.css" rel="stylesheet"/>
+
+    <!-- Revelation Slider -->
+    <link href="rs-plugin/css/rev-settings.css" rel="stylesheet"/>
+    <link href="rs-plugin/css/settings.css" rel="stylesheet"/>
+
+    <!-- owl carousel CSS -->
+    <link href="css/owl.carousel.css" rel="stylesheet"/>
+    <link href="css/owl.theme.css" rel="stylesheet"/>
+    <!-- Main style CSS -->
+    <link href="css/style.css" rel="stylesheet"/>
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet"/>
+
+   
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+
+   
+
+    <div>
+        <!-- Start Loading -->
+
+        <section class="loading-overlay">
+            <div class="Loading-Page">
+                <h1 class="loader">Loading...</h1>
+            </div>
+        </section>
+
+        <!-- End Loading  -->
+
+        <!-- Start Header  -->
+        <header class="full-header">
+            <div id="top-bar" class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 col-md-8 hidden-xs">
+                            <ul class="list-inline top-contact">
+                                <li>
+                                    <p>
+                                        Phone:
+									
+                                        <span><asp:Label ID="lblphone1" runat="server"></asp:Label></span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Email:
+									
+                                        <span><asp:Label ID="lblemail" runat="server"></asp:Label></span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- .col-md-6 end -->
+                        <div class="col-xs-12 col-sm-4 col-md-4 text-right">
+                            <ul class="list-inline top-widget">
+                                <li class="top-social">
+                                    <a href="https://www.facebook.com/allfamilybimapoint/"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://twitter.com/licajayggn"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/allfamilybimapoint/"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/ajay-kumar-aa5830150"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a class="button-quote" href="#" id="hmodelquote">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- .col-md-6 end -->
+                    </div>
+                </div>
+            </div>
+            <nav id="primary-menu" class="navbar style-1">
+                <div class="row">
+                    <div class="container mobile-heading">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                             <asp:Repeater ID="rpterheadrlogo" runat="server"><ItemTemplate>
+                            <a class="logo" href="default.aspx">
+                                <img src="<%# ResolveUrl(Eval("content").ToString()) %>" alt="All Family Bima Point">
+                            </a>
+                                   </ItemTemplate></asp:Repeater>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li class="">
+                                    <a href="Default.aspx">Home</a>
+
+                                </li>
+
+                                <!-- li end -->
+                                <li class="has-dropdown">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">About</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="">
+                                            <a href="about-us.aspx">About Us</a>
+
+                                        </li>
+                                        <li class="">
+                                            <a href="awards.aspx">Award and Achievement</a>
+
+                                        </li>
+                                        <li class="">
+                                            <a href="download-form.aspx">Download Form</a>
+
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li class="has-dropdown ">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Services</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="life-insurance.aspx">Life Insurance</a>
+                                        </li>
+                                        <li>
+                                            <a href="health-insurance.aspx">Health Insurance</a>
+                                        </li>
+                                        <li>
+                                            <a href="general-insurance.aspx">General Insurance</a>
+                                        </li>
+                                        <li>
+                                            <a href="mutual-funds.aspx">Mutual Funds</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+
+
+                                <li class="">
+                                    <a href="testimonials.aspx">Testimonial</a>
+
+                                </li>
+                                <li class="">
+                                    <a href="apply-online.aspx">Apply Online</a>
+
+                                </li>
+                               <%-- <li class="">
+                                    <a href="query.aspx">Query Form</a>
+
+                                </li>--%>
+                                <li class="">
+                                    <a href="gallery.aspx">Gallery</a>
+
+                                </li>
+                                <li class="">
+                                    <a href="contact-us.aspx"> Contact Us</a>
+
+                                </li>
+
+
+
+
+
+                             
+                                <!-- li end -->
+                            </ul>
+
+
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </div>
+            </nav>
+        </header>
+        <!-- End  Header -->
+
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+
+ <footer id="footer" class="site-footer">
+            <div id="template-footer" role="contentinfo">
+                <div class="container">
+                    <div class="row">
+
+
+                        <div class="col-md-4 to-animate">
+                            
+                            <asp:Repeater ID="rptfootrlogo" runat="server"><ItemTemplate>
+
+                            <img src="<%# ResolveUrl(Eval("content").ToString()) %>" />
+                            </ItemTemplate></asp:Repeater>
+                            <p class="copy-right">
+                                &copy; 2018 All Family Bima Point.
+                                <br />
+                                All Rights Reserved.
+                                <br />
+                                Designed  & Developed by <a href="https://www.jmbwebsoft.com/" target="_blank">JMB Websoft Pvt Ltd</a>
+                            </p>
+                           <%-- <div class="copyright">
+                                <label class="footer-link"><a href="#">Privacy Policy</a> - <a href="#">Terms of Use</a></label>
+                            </div>--%>
+                        </div>
+
+                        <div class="col-md-4 to-animate">
+                            <h3 class="section-header section-title">Our Address</h3>
+                            <ul class="contact-info">
+                                <li><span><i class="fa fa-home"></i><asp:Label ID="lbladdress"  runat="server"> </asp:Label></span></li>
+                                <li><span><i class="fa fa-phone"></i><asp:Label ID="lblphone" runat="server"></asp:Label></span></li>
+
+                                <li><span><i class="fa fa-whatsapp"></i><asp:Label ID="Label1" runat="server" Text="+91 - 9911353954"></asp:Label></span></li>
+
+
+                                <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="#"> <asp:Label ID="lblemail1" runat="server"></asp:Label></a></li>
+                                <li><i class="fa fa-share-square-o"></i><a href="#">www.allfamilybimapoint.com</a></li>
+                            </ul>
+                            <h3 class="section-header section-title">Connect with Us</h3>
+                            <ul class="social-media">
+                                <li><a href="https://www.facebook.com/allfamilybimapoint/" class="facebook"><i class="icon-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/licajayggn" class="twitter"><i class="icon-twitter"></i></a></li>
+                                
+
+                                <li><a href="https://www.linkedin.com/in/ajay-kumar-aa5830150" class="linkedina"><i class="icon-linkedin"></i></a></li>
+
+                                <li><a href="https://www.instagram.com/allfamilybimapoint/" class="instagram"><i class="icon-instagram"></i></a></li>
+                                
+
+
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 quick-contact">
+                            <h3 class="section-header section-title">Quick Contact</h3>
+                            <div class="Contact-Form">
+                                <form class="leave-comment contact-form" >
+                                    <fieldset>
+                                        <div id="formstatus"></div>
+                                        <div class="Contact-us">
+                                            <div class="form-input col-md-6">
+                                                <input type="text" id="txtname" name="name" placeholder="Your Name" required />
+                                            </div>
+                                            <div class="form-input col-md-6">
+                                                <input type="email" id="txtemail" name="email" placeholder="Email" required  />
+                                            </div>
+                                            <div class="form-input col-md-12">
+                                                <input type="text" id="txtsubject" name="subject" placeholder="Phone Number" />
+                                            </div>
+                                            <div class="form-input col-md-12">
+                                                <textarea class="txt-box textArea" id="txtcomment" name="message" cols="40" rows="7" placeholder="Message" spellcheck="true" required  ></textarea>
+                                            </div>
+                                            <div class="form-submit col-md-12">
+
+                                                <%--<asp:Button ID="btnsubmit" class="btn btn-large main-bg" runat="server" Text="submit" OnClick="btnsubmit_Click" />--%>
+
+
+                                                <input type="submit" id="submit" class="btn btn-large main-bg" value="Send Message">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="to-top" class="main-bg"><span class="fa fa-chevron-up"></span></div>
+
+
+
+</div>
+
+  <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- SLIDER REVOLUTION SCRIPTS  -->
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/revslider-custom.js"></script>
+
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <!--  Form validate -->
+    <script src="js/jqueryvalidate/jquery.validate.min.js"></script>
+    <!--  Form submit  -->
+    <script src="js/jqueryform/jquery.form.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            "use strict";
+            $(".fact-number").appear(function () {
+                var t = $(this).attr("data-perc");
+                $(this).each(function () {
+                    $(this).find(".factor").delay(6e3).countTo({
+                        from: 10,
+                        to: t,
+                        speed: 3e3,
+                        refreshInterval: 50
+                    })
+                })
+            })
+        })
+</script>
+
+     <script>
+         (function (w, i, d, g, e, t, s) {
+             w[d] = w[d] || []; t = i.createElement(g);
+             t.async = 1; t.src = e; s = i.getElementsByTagName(g)[0]; s.parentNode.insertBefore(t, s);
+         })(window, document, '_gscq', 'script', '//widgets.getsitecontrol.com/143163/script.js');
+</script>
+<%--https://app.getsitecontrol.com/#/dashboard/sites/143163/settings/install--%>
+
+</body>
+</html>

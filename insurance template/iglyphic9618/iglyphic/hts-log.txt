@@ -1,0 +1,22 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 19 Jun 2018 18:34:01 at http://iglyphic.com/themes/html/html_safest/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://iglyphic.com/themes/html/html_safest/ -O1 "C:\Users\JMB2\Desktop\iglyphic9618\iglyphic" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:36:08	Warning: 	file not stored in cache due to bogus state (broken size, expected 595199 got 578883): iglyphic.com/themes/html/html_safest/img-rev-slider/Slider1.png
+18:42:54	Warning: 	Retry after error -4 (Incorrect length (578883 Bytes, 595199 expected)) at link iglyphic.com/themes/html/html_safest/img-rev-slider/Slider1.png (from iglyphic.com/themes/html/html_safest/)
+18:42:58	Warning: 	File not parsed, looks like binary: iglyphic.com/themes/html/html_safest/fonts/FontAwesome/fontawesome-webfonte0a5.html?v=4.3.0
+18:42:58	Warning: 	Warning: store application/octet-stream without scan: C:/Users/JMB2/Desktop/iglyphic9618/iglyphic/iglyphic.com/themes/html/html_safest/fonts/FontAwesome/fontawesome-webfonte0a5e0a5.html
+18:42:58	Warning: 	File not parsed, looks like binary: iglyphic.com/themes/html/html_safest/css/fonts/font-awesome/fontawesome-webfont.woff2
+18:43:16	Warning: 	file not stored in cache due to bogus state (broken size, expected 611669 got 524099): iglyphic.com/themes/html/html_safest/images/blog/blog-post-4.png
+18:43:16	Warning: 	Retry after error -4 (Incorrect length (524099 Bytes, 611669 expected)) at link iglyphic.com/themes/html/html_safest/images/blog/blog-post-4.png (from iglyphic.com/themes/html/html_safest/blog_standard_left_sidebar.html)
+18:43:16	Error: 	"Not Found" (404) at link iglyphic.com/themes/html/img/testimonial/bg-1.jpg (from iglyphic.com/themes/html/html_safest/css/testimonial.css)
+18:43:16	Error: 	"Not Found" (404) at link iglyphic.com/themes/html/img/testimonial/bg-2.jpg (from iglyphic.com/themes/html/html_safest/css/testimonial.css)
+18:43:16	Error: 	"Not Found" (404) at link iglyphic.com/themes/html/img/testimonial/bg-3.jpg (from iglyphic.com/themes/html/html_safest/css/testimonial.css)
+18:43:20	Error: 	"Not Found" (404) at link iglyphic.com/templates/system/css/error.css (from iglyphic.com/themes/html/html_safest/css/jquery-css/images/ui-icons_ffffff_256x240.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 9 minutes 19 seconds : 201 links scanned, 194 files written (14629648 bytes overall) [14137152 bytes received at 25290 bytes/sec], 723358 bytes transferred using HTTP compression in 45 files, ratio 26%
+(4 errors, 7 warnings, 0 messages)
